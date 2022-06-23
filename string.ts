@@ -1,0 +1,10 @@
+let ab:string='typescript';
+   ab.charAt(0);
+   ab.charAt(4);
+   let c:string='good day';
+   console.log(c.length);
+   var k:string=ab.concat(c);
+   console.log(k);
+   var k:string=ab.concat(' ',c);
+   console.log(k);
+   console.log(k.length);
