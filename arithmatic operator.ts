@@ -7,6 +7,8 @@ c=a+b;
 console.log("sum:"+c);
 c=a-b;
 console.log("diff:"+c);
+c=b-a;
+console.log("diff:"+c);
 c=a*b;
 console.log("mul:"+c);
 c=a/b;
@@ -17,3 +19,4 @@ c++;
 console.log("incr:"+c);
 c--
 console.log("decr:"+c);
+
