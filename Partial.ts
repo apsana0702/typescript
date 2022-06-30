@@ -1,4 +1,5 @@
-// Partial interface word {
+// Partial
+ interface word {
   x: number;
   y: any;
 }
