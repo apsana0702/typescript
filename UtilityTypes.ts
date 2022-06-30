@@ -38,3 +38,37 @@ const ne: Record<string, number> = {
 console.log(ne);
 
 //this demonstrates usage of Partial, Requires,Record
+//------------------------
+//pick
+
+interface Person {
+  name: string;
+  age: number;
+  location?: string;
+}
+
+const bob: Pick<Person, 'name'> = {
+  name: 'lakshmi'
+};
+Console.log (lakshmi);
+
+//omit example
+
+interface Person {
+  name: string;
+  age: number;
+Gender:string;
+  location?: string;
+}
+const bob: Omit<Person, 'age' | 'Gender' | 'location'> = {
+  name: 'saisri'
+};
+Console.log (saisri);
+
+//Exclude
+
+type Primitive = string | number | boolean
+const value: Exclude<Primitive, string> = true; 
+Console.log (typeof value);
+// working of Exclude type
+
