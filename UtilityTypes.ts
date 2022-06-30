@@ -1,4 +1,7 @@
 // Partial
+//changes the properties of an object to be optional 
+
+
  interface word {
   x: number;
   y: any;
@@ -16,6 +19,9 @@ console.log(pointPart);
 Console.log (me);
 
 //Requires example
+//changes properties of an object that are required 
+
+
 
 interface Car {
   make: string;
@@ -30,6 +36,10 @@ let myCar: Required<Car> = {
 Console.log(mycar);
 
 //Record example
+//defines an object with specific key type or value type
+
+
+
 const ne: Record<string, number> = {
   'gita': 21,
   'chandini': 25
@@ -40,6 +50,9 @@ console.log(ne);
 //this demonstrates usage of Partial, Requires,Record
 //------------------------
 //pick
+//removes all except th specified  from an obj type 
+
+
 
 interface Person {
   name: string;
@@ -53,6 +66,10 @@ const bob: Pick<Person, 'name'> = {
 Console.log (lakshmi);
 
 //omit example
+//removes keys from object type
+
+
+
 
 interface Person {
   name: string;
@@ -66,6 +83,7 @@ const bob: Omit<Person, 'age' | 'Gender' | 'location'> = {
 Console.log (saisri);
 
 //Exclude
+//removes types from the union
 
 type Primitive = string | number | boolean
 const value: Exclude<Primitive, string> = true; 
